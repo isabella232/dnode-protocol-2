@@ -1,0 +1,26 @@
+{
+  "name": "koding-dnode-protocol",
+  "version": "0.2.0",
+  "private": true,
+  "main": "build/index.js",
+  "scripts": {
+    "prepublish": "rm -fr build && mkdir -p build && coffee -p -b index.coffee > build/index.js"
+  },
+  "dependencies": {
+    "hat": "0.0.3",
+    "jsonify": "0.0.0",
+    "kd-shim-jspath": "^0.2.0",
+    "scrubber": "git+ssh://git@github.com/koding/scrubber.git#v0.2.0"
+  },
+  "browser": {
+    "jspath": "kd-shim-jspath"
+  },
+  "gitHead": "3d3af8ff22c57b1d4fb94a1e2a3b4caf06efe4b0",
+  "readme": "# dnode-protocol\n\n[dnode](https://github.com/substack/dnode) implementation.\n\nThis package exports `build/index.js`; to transpile coffeescript sources into js, type in:\n\n```\nnpm run prepublish\n```\n\n# license\n\n2015 Koding, Inc.\n",
+  "readmeFilename": "Readme.md",
+  "description": "[dnode](https://github.com/substack/dnode) implementation.",
+  "_id": "koding-dnode-protocol@0.2.0",
+  "_shasum": "d7bbbc763960ddd90bdbc800fe528f913bfc851a",
+  "_from": "git+ssh://git@github.com/koding/dnode-protocol.git#v0.2.0",
+  "_resolved": "git+ssh://git@github.com/koding/dnode-protocol.git#3d3af8ff22c57b1d4fb94a1e2a3b4caf06efe4b0"
+}
